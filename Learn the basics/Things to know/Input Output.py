@@ -1,9 +1,6 @@
 '''
 Input Output
-Subscribe to TUF+
-
-Hints
-Company
+-----------------------------------------------------------------
 Complete the function printNumber which takes an integer input from the user and prints it on the screen.
 
 

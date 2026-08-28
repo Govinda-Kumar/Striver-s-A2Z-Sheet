@@ -1,9 +1,6 @@
 '''
 If ElseIf
-Subscribe to TUF+
-
-Hints
-Company
+-----------------------------------------------------------------
 Given marks of a student, print on the screen:
 
 Grade A if marks >= 90
