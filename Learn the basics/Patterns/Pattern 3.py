@@ -48,11 +48,17 @@ Constraints
 '''
 
 class Solution:
+        
+    # Approach - 1
+
     # def pattern3(self, n):
     #     for i in range(1, n+1):
     #         for j in range(1, i+1):
     #             print(j, end="")
     #         print()
+
+    
+    # Approach - 2
 
     def pattern3(self, n):
         base_string = "".join(str(x) for x in range(1, n+1))

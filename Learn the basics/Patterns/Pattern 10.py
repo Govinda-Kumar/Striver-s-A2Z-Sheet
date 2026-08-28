@@ -1,18 +1,27 @@
 '''
-Pattern 6
+Pattern 10
 -------------------------------------------------
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
 
 
-12345
 
-1234
+*
 
-123
+**
 
-12
+***
 
-1
+****
+
+*****
+
+****
+
+***
+
+**
+
+*
 
 
 
@@ -25,24 +34,30 @@ Input: n = 4
 
 Output:
 
-1234
+*
 
-123
+**
 
-12
+***
 
-1
+****
 
+***
+
+**
+
+*
 
 Example 2
 
 Input: n = 2
 
 Output:
+*
 
-12
+**
 
-1
+*
 
 
 Constraints
@@ -51,25 +66,31 @@ Constraints
 '''
 
 class Solution:
-        
+
     # Approach - 1
 
-    # def pattern6(self, n):
+    # def pattern10(self, n):
+    #     for i in range(1, n):
+    #         print("*" * i)
     #     for i in range(n, 0, -1):
-    #         for j in range(1, i+1):
-    #             print(j, end="")
-    #         print()
+    #         print("*" * i)
 
     
     # Approach - 2
 
-    def pattern6(self, n):
-        base_string = "".join(str(x) for x in range(1, n+1))
-        for i in range(n, 0, -1):
-            print(base_string[:i])
+    # def pattern10(self, n):
+    #     for i in range(1, n):
+    #         print(f"{"*" * i}")
+    #     for i in range(n, 0, -1):
+    #         print(f"{"*" * i}")
 
+    # Approach - 3
+
+    def pattern10(self, n):
+        for i in list(range(1, n)) + list(range(n, 0, -1)):
+            print("*" * i)
 
 # code runner
 if __name__ == "__main__":
     sol = Solution()
-    sol.pattern6(5)
+    sol.pattern10(4)
