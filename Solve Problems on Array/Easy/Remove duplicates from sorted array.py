@@ -79,13 +79,10 @@ class Solution:
     def moveZeroes(self, nums: list[int]):
         n = len(nums)
         write = 0
-        print(nums)
         for read in range(n):
-            print(read, write, ":", nums[read], nums[write])
             if nums[read] != 0:
                 nums[read], nums[write] = nums[write], nums[read]
                 write += 1
-                print(nums)
         return nums
 
 # code runner
@@ -93,5 +90,5 @@ if __name__ == "__main__":
     sol = Solution()
     # print(sol.moveZeroes([0, 0, 3, 3, 5, 6]))
     print(sol.moveZeroes([-2, 0, 2, 4, 0, 4, 4, 0, 5]))
-    # print(sol.moveZeroes([1, 2, 3, 0, 0, 6]))
-    # print(sol.moveZeroes([0, 2, 3, 0, 0, 4, 0]))
+    print(sol.moveZeroes([1, 2, 3, 0, 0, 6]))
+    print(sol.moveZeroes([0, 2, 3, 0, 0, 4, 0]))
