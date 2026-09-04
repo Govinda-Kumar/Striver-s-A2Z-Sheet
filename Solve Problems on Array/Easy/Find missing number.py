@@ -57,7 +57,7 @@ class Solution:
     #     n = len(nums)
     #     return ((n * (n + 1)) // 2) - sum(nums)
     
-    # Approach - 3
+    # Approach - 4
     def missingNumber(self, nums):
         n = len(nums)
         for i, num in enumerate(nums):
